@@ -19,7 +19,6 @@
   justify-self: end;
   border-block-start: 1px solid var(--decoration-color, #FF0070);
   border-inline-end: 1px solid var(--decoration-color, #FF0070);
-  margin-block-start: var(--general-padding, 10px);
   margin-inline-end: var(--general-padding, 10px);
 }
 
@@ -172,14 +171,11 @@
 
 .difficulties {
   margin-block-start: 40px;
-}
-
-.factors {
-  margin-block-start: 20px;
+  margin-block-end: 40px;
 }
 
 .tips {
-   margin-block-start: 40px;
+  margin-block-start: 40px;
 }
 
 .main-title {
@@ -202,7 +198,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block-start: 40px;
+  margin-block-start: 44px;
 }
 
 .gallery-image {
@@ -245,8 +241,6 @@
   justify-content: center;
   height: 100vh;
   margin-block-start: 50px;
-  padding-inline-end: var(--general-padding, 10px);
-  padding-inline-start: var(--general-padding, 10px);
   padding-block-end: var(--general-padding, 10px);
 }
 
@@ -256,6 +250,10 @@
   font-family: var(--main-font-family);
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--main-color);
+}
+
+.footer.decorated-zone::before {
+  margin-block-start: 10px;
 }
 
 @media (width >= 768px) {
