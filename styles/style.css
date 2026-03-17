@@ -241,7 +241,6 @@
   justify-content: center;
   height: 100vh;
   margin-block-start: 50px;
-  padding-block-end: var(--general-padding, 10px);
 }
 
 .footer__text {
@@ -272,6 +271,10 @@
   margin-block-end: 15px;
   margin-inline-start: 20px;
   }
+  
+  .footer.decorated-zone::after {
+  margin-block-end: 15px;
+}
 
   .header {
   padding-inline-start: 20px;
