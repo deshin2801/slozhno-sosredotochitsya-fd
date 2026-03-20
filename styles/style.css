@@ -20,6 +20,7 @@
   border-block-start: 1px solid var(--decoration-color, #FF0070);
   border-inline-end: 1px solid var(--decoration-color, #FF0070);
   margin-inline-end: var(--general-padding, 10px);
+  margin-block-start: var(--general-padding, 10px);
 }
 
 .decorated-zone::after {
@@ -58,8 +59,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   padding-inline-end: var(--general-padding, 10px);
-  padding-inline-start: var(--general-padding, 10px);
   padding-block-start: var(--general-padding, 10px);
+  padding-inline-start: var(--general-padding, 10px);
 }
 
 .header__decoration-dark {
@@ -90,6 +91,7 @@
 .header__theme-menu {
   justify-self: end;
   align-content: center;
+  margin-block-end: 10px;
 }
 
 .header__theme-menu-list {
@@ -198,7 +200,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-block-start: 44px;
+  margin-block-start: 37px;
 }
 
 .gallery-image {
@@ -239,8 +241,9 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-block-start: 50px;
+  min-height: 100vh;
+  margin-block-start: 40px;
+  max-height: 668px;
 }
 
 .footer__text {
@@ -272,8 +275,8 @@
   margin-inline-start: 20px;
   }
   
-  .footer.decorated-zone::after {
-  margin-block-end: 15px;
+  .footer.decorated-zone::before {
+  margin-block-start: 14px;
 }
 
   .header {
@@ -284,7 +287,7 @@
 
   .header__title {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  margin-inline-start: -15px;
+  margin-inline-start: -20px;
   }
 
   .header__text {
@@ -293,6 +296,10 @@
   justify-self: end;
   }
   
+  .header__theme-menu {
+    margin: 0;
+  }
+
   .main {
   padding-inline-start: 20px;
   padding-inline-end: 20px;
@@ -305,7 +312,7 @@
 
   .gallery {
     margin-block-start: 72px;
-    gap: 17px
+    gap: 20px
   }
 
   .images {
@@ -320,7 +327,8 @@
   }
 
   .footer {
-  margin-block-start: 70px;
+  margin-block-start: 65px;
+  padding-block-end: 7px;
   }
 
   .footer__text {
@@ -349,7 +357,7 @@
   .header__theme-menu {
   align-content: start;
   justify-self: center;
-  margin-block-start: 15px;
+  margin-block-start: 13px;
   }
   
   .header {
@@ -364,6 +372,10 @@
   
   .header__text {
   max-width: 491px;
+  }
+  
+  .header__title {
+    margin-inline-start: -15px;
   }
 
   .header__theme-menu-list {
@@ -380,9 +392,9 @@
   }
 
   .factors {
-    margin-block-start: 10px;
+   margin-block-start: 10px;
   }
-  
+
   .tips {
     margin-block-start: 70px;
   }
