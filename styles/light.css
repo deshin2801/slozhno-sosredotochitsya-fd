@@ -10,6 +10,7 @@
   --title-color: #FFC2E6;
   --link-color: #353430;
   --decoration-color: #353430;
+  --background-color: #FFF1F7;
   .header__decoration-dark {
     display: none;
   }
@@ -23,6 +24,7 @@
    --title-color: #FFC2E6;
    --link-color: #353430;
    --decoration-color: #353430;
+   --background-color:#FFF1F7;
   }
   .header__decoration-dark {
     display: none;
