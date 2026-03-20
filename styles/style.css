@@ -277,7 +277,7 @@
   }
   
   .footer.decorated-zone::before {
-  margin-block-start: 14px;
+  margin-block-start: 16px;
 }
 
   .header {
@@ -313,7 +313,7 @@
   }
 
   .gallery {
-    margin-block-start: 76px;
+    margin-block-start: 70px;
     gap: 20px
   }
 
@@ -359,7 +359,7 @@
   .header__theme-menu {
   align-content: start;
   justify-self: center;
-  margin-block-start: 14px;
+  margin-block-start: 10px;
   }
   
   .header {
@@ -387,6 +387,15 @@
   .main-section {
     gap: 10px;
   }
+  
+  .gallery {
+    margin-block-start: 72px;
+  }
+
+  .difficulties {
+  margin-block-start: 62px;
+  margin-block-end: 70px;
+  }
 
   .aligment-title {
   display: block;
@@ -395,6 +404,7 @@
 
   .factors {
    margin-block-start: 10px;
+   gap: 15px;
   }
 
   .tips {
