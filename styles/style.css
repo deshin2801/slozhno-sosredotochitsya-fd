@@ -6,7 +6,7 @@
   object-position: center;
   background-attachment: fixed;
   background-color: var(--background-color, #000028);
-  font-family: var(--main-font-family, 'IBM Plex mono');
+  font-family: var(--main-font-family);
   font-size: var(--main-font-size, 18px);
 }
 
@@ -104,7 +104,7 @@
   padding: 2 15px;
   font-size: var(--main-font-size, 18px);
   color: var(--main-color, #ff0070);
-  font-family: var(--main-font-family, 'IBM Plex mono');
+  font-family: var(--main-font-family);
   font-weight: var(--main-font-weight, 400);
   line-height: 18px;
   text-transform: lowercase;
@@ -183,7 +183,7 @@
 .main-title {
   font-size: var(--main-font-size, 18px);
   color: var(--main-color, #ff0070);
-  font-family: var(--main-font-family, 'IBM Plex mono');
+  font-family: var(--main-font-family);
   line-height: 130%;
 }
 
@@ -241,9 +241,9 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  block-size: 100vh;
   margin-block-start: 40px;
-  max-height: 668px;
+  min-block-size: 668px;
 }
 
 .footer__text {
