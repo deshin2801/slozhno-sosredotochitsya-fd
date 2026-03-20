@@ -77,7 +77,6 @@
 }
 
 .header__decoration-dark::after {
-  display: inline-block;
   content: '';
   height: 9px;
   width: 9px;
@@ -143,13 +142,13 @@
   background-color: var(--main-color, #ff0070);
   color: var(--black, #000028);
   font-size: var(--main-font-size, 18px);
-  font-weight: 700;
+  font-weight: var(--bold-font-weight, 700);
 }
 
 .header__text {
-  align-self: center;
-  font-weight: 700;
   display: flex;
+  align-self: center;
+  font-weight: var(--bold-font-weight, 700);
   margin-block-end: 23px;
 }
 
@@ -191,7 +190,7 @@
 .main-text {
   color: var(--link-color,#F1B2CE);
   font-size: var(--main-font-size, 18px);
-  font-weight: 400;
+  font-weight: var(--main-font-weight, 400);
   font-family: var(--main-font-family);
   line-height: 130%;
   padding-block-end: 10px;
@@ -248,7 +247,7 @@
 }
 
 .footer__text {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight, 700);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-family: var(--main-font-family);
   color: var(--title-color);
