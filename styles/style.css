@@ -277,7 +277,7 @@
   
   .footer.decorated-zone::before {
   margin-block-start: 16px;
-}
+  }
 
   .header {
   padding-inline-start: 20px;
