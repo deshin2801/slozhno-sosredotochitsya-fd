@@ -82,7 +82,7 @@
   width: 9px;
   border-radius: 50%;
   background-color: var(--main-color, #ff0070);
-  margin-inline: 10px;
+  margin-inline: var(--general-padding, 10px);
   margin-block: 8px ;
   box-shadow: 0 0 4px 2px var(--main-color, #ff0070);
 }
@@ -96,7 +96,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--general-padding, 10px);
 }
 
 .header__theme-menu-button {
@@ -135,12 +135,12 @@
   color: var(--title-color,#DB00FF);
   text-shadow: 4px 4px 0 var(--main-color, #ff0070);
   line-height: 83%;
-  margin-block-end: 10px;
+  margin-block-end: var(--general-padding, 10px);
 }
 
 .title-decor {
   background-color: var(--main-color, #ff0070);
-  color: var(--black, #000028);
+  color: var(--background-color, #000028);
   font-size: var(--main-font-size, 18px);
   font-weight: var(--bold-font-weight, 700);
 }
@@ -159,7 +159,7 @@
 
 .main-content {
   display: grid;
-  gap: 10px;
+  gap: var(--general-padding, 10px);
 }
 
 .main-section {
@@ -168,7 +168,7 @@
 }
 
 .sub-title {
-  margin-block-end: 10px;
+  margin-block-end: var(--general-padding, 10px);
 }
 
 .difficulties {
@@ -193,13 +193,13 @@
   font-weight: var(--main-font-weight, 400);
   font-family: var(--main-font-family);
   line-height: 130%;
-  padding-block-end: 10px;
+  padding-block-end: var(--general-padding, 10px);
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--general-padding, 10px);
   margin-block-start: 42px;
 }
 
@@ -208,12 +208,12 @@
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
-  gap: 10px;
+  gap: var(--general-padding, 10px);
 }
 
 .images {
   display: flex;
-  gap: 10px;
+  gap: var(--general-padding, 10px);
   flex-direction: column;
 }
 
@@ -255,7 +255,7 @@
 }
 
 .footer.decorated-zone::before {
-  margin-block-start: 10px;
+  margin-block-start: var(--general-padding, 10px);
 }
 
 @media (width >= 768px) {
@@ -358,11 +358,11 @@
   .header__theme-menu {
   align-content: start;
   justify-self: center;
-  margin-block-start: 10px;
+  margin-block-start: var(--general-padding, 10px);
   }
   
   .header {
-    padding-block-start: 10px;
+    padding-block-start: var(--general-padding, 10px);
     padding-inline-start: 15px;
   }
 
@@ -372,6 +372,7 @@
   }
   
   .header__text {
+  display: flex;
   max-width: 491px;
   }
   
@@ -384,7 +385,7 @@
   }
   
   .main-section {
-    gap: 10px;
+    gap: var(--general-padding, 10px);
   }
   
   .gallery {
@@ -402,7 +403,7 @@
   }
 
   .factors {
-   margin-block-start: 10px;
+   margin-block-start: var(--general-padding, 10px);
   }
 
   .tips {
